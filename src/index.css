@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap');
+
+:root {
+  --color-body-bg: #222;
+  --color-primary-bg: #bbcdff;
+  --color-text: #fff;
+  --color-primary: #335eea;
+  --color-secondary-bg: #323232;
+  --color-secondary-bg-for-transparent: hsla(0,0%,100%,0.08);
+  --color-primary-bg-for-transparent: hsla(0,0%,100%,0.12);
+  --color-navbar-bg: rgba(34,34,34,0.86);
+  --color-player-slider: hsla(0,0%,50.2%,.18);
+}
+
+body {
+  background-color: var(--color-body-bg);
+  font-family: 'Barlow', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.38);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.7);
+}
+
+.style__buttons {
+  @apply p-2 flex justify-center items-center bg-transparent rounded-[25%] transition-all duration-200 hover:bg-[color:var(--color-secondary-bg-for-transparent)]
+}
+
+@keyframes lyric-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes lyric-down {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
