@@ -1,4 +1,4 @@
-const { ZingMp3 } = require("zingmp3-api")
+const { ZingMp3 } = require("zingmp3-api-full")
 
 class ZingController {
 
