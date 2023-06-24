@@ -9,7 +9,7 @@ import TrackInfo from "./TrackInfo";
 import VolumeControl from "./VolumeControl";
 import VolumeSliderControl from "./VolumeSliderControl";
 import SongSliderControl from "./SongSliderControl";
-import RecommendControl from "./RecommendControl";
+// import RecommendControl from "./RecommendControl";
 
 const Control: React.FC<{ auRef: HTMLAudioElement | null }> = ({ auRef }) => {
   return (
@@ -31,7 +31,7 @@ const Control: React.FC<{ auRef: HTMLAudioElement | null }> = ({ auRef }) => {
 
         {/* Right Controls Button */}
         <div className="flex justify-center items-center">
-          <RecommendControl />
+          {/* <RecommendControl /> */}
           <LyricControl />
           <RepeatControl />
           <ShuffleControl />
